@@ -1,0 +1,17 @@
+
+<h1>Test mail送信</h1>
+<%= form_for :user, url: confirm_path do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control"  %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "form-control"  %>
+  </div>
+
+  <div class="btn_area">
+    <%= f.submit '確認画面へ', class: "btn btn-primary"%>
+  </div>
+<% end %>

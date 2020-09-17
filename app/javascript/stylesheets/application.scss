@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap";
+
+form {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+div.btn_area {
+  text-align: center;
+}
+
+.container {
+  width: 400px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: 2px solid lightgray;
+  padding: 20px;
+}

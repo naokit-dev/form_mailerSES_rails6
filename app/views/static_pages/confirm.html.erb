@@ -1,0 +1,23 @@
+<h1>送信先確認</h1>
+<div class="form-group">
+<label>Name</label>
+<p class="form-control-plaintext"><%= @user.name %></p>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<p class="form-control-plaintext"><%= @user.email %></p>
+</div>
+
+<div class="btn_area">
+<%= form_for :user, url: send_path do |f| %>
+  <%= f.hidden_field :name %>
+  <%= f.hidden_field :email %>
+  <%= f.submit 'メールを送信', class: "btn btn-primary"%>
+<% end %>
+<%= form_for :user, url: back_path do |f| %>
+  <%= f.hidden_field :name %>
+  <%= f.hidden_field :email %>
+  <%= f.submit '戻る', class: "btn btn-secondary"%>
+<% end %>
+</div>
